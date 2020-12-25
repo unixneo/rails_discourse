@@ -1,0 +1,174 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Seen notification:</strong>
+  <%= @user.seen_notification_id %>
+</p>
+
+<p>
+  <strong>Last posted at:</strong>
+  <%= @user.last_posted_at %>
+</p>
+
+<p>
+  <strong>Password hash:</strong>
+  <%= @user.password_hash %>
+</p>
+
+<p>
+  <strong>Salt:</strong>
+  <%= @user.salt %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @user.active %>
+</p>
+
+<p>
+  <strong>Username lower:</strong>
+  <%= @user.username_lower %>
+</p>
+
+<p>
+  <strong>Last seen at:</strong>
+  <%= @user.last_seen_at %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @user.admin %>
+</p>
+
+<p>
+  <strong>Last emailed at:</strong>
+  <%= @user.last_emailed_at %>
+</p>
+
+<p>
+  <strong>Trust level:</strong>
+  <%= @user.trust_level %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @user.approved %>
+</p>
+
+<p>
+  <strong>Approved by:</strong>
+  <%= @user.approved_by_id %>
+</p>
+
+<p>
+  <strong>Approved at:</strong>
+  <%= @user.approved_at %>
+</p>
+
+<p>
+  <strong>Previous visit at:</strong>
+  <%= @user.previous_visit_at %>
+</p>
+
+<p>
+  <strong>Suspended at:</strong>
+  <%= @user.suspended_at %>
+</p>
+
+<p>
+  <strong>Suspended till:</strong>
+  <%= @user.suspended_till %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @user.date_of_birth %>
+</p>
+
+<p>
+  <strong>Views:</strong>
+  <%= @user.views %>
+</p>
+
+<p>
+  <strong>Flag level:</strong>
+  <%= @user.flag_level %>
+</p>
+
+<p>
+  <strong>Ip address:</strong>
+  <%= @user.ip_address %>
+</p>
+
+<p>
+  <strong>Moderator:</strong>
+  <%= @user.moderator %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @user.title %>
+</p>
+
+<p>
+  <strong>Uploaded avatar:</strong>
+  <%= @user.uploaded_avatar_id %>
+</p>
+
+<p>
+  <strong>Locale:</strong>
+  <%= @user.locale %>
+</p>
+
+<p>
+  <strong>Primary group:</strong>
+  <%= @user.primary_group_id %>
+</p>
+
+<p>
+  <strong>Registration ip address:</strong>
+  <%= @user.registration_ip_address %>
+</p>
+
+<p>
+  <strong>Staged:</strong>
+  <%= @user.staged %>
+</p>
+
+<p>
+  <strong>First seen at:</strong>
+  <%= @user.first_seen_at %>
+</p>
+
+<p>
+  <strong>Silenced till:</strong>
+  <%= @user.silenced_till %>
+</p>
+
+<p>
+  <strong>Group locked trust level:</strong>
+  <%= @user.group_locked_trust_level %>
+</p>
+
+<p>
+  <strong>Manual locked trust level:</strong>
+  <%= @user.manual_locked_trust_level %>
+</p>
+
+<p>
+  <strong>Secure identifier:</strong>
+  <%= @user.secure_identifier %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

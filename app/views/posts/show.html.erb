@@ -1,0 +1,244 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @post.user_id %>
+</p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @post.topic_id %>
+</p>
+
+<p>
+  <strong>Post number:</strong>
+  <%= @post.post_number %>
+</p>
+
+<p>
+  <strong>Raw:</strong>
+  <%= @post.raw %>
+</p>
+
+<p>
+  <strong>Cooked:</strong>
+  <%= @post.cooked %>
+</p>
+
+<p>
+  <strong>Reply to post number:</strong>
+  <%= @post.reply_to_post_number %>
+</p>
+
+<p>
+  <strong>Reply count:</strong>
+  <%= @post.reply_count %>
+</p>
+
+<p>
+  <strong>Quote count:</strong>
+  <%= @post.quote_count %>
+</p>
+
+<p>
+  <strong>Deleted at:</strong>
+  <%= @post.deleted_at %>
+</p>
+
+<p>
+  <strong>Off topic count:</strong>
+  <%= @post.off_topic_count %>
+</p>
+
+<p>
+  <strong>Like count:</strong>
+  <%= @post.like_count %>
+</p>
+
+<p>
+  <strong>Incoming link count:</strong>
+  <%= @post.incoming_link_count %>
+</p>
+
+<p>
+  <strong>Bookmark count:</strong>
+  <%= @post.bookmark_count %>
+</p>
+
+<p>
+  <strong>Score:</strong>
+  <%= @post.score %>
+</p>
+
+<p>
+  <strong>Reads:</strong>
+  <%= @post.reads %>
+</p>
+
+<p>
+  <strong>Post type:</strong>
+  <%= @post.post_type %>
+</p>
+
+<p>
+  <strong>Sort order:</strong>
+  <%= @post.sort_order %>
+</p>
+
+<p>
+  <strong>Last editor:</strong>
+  <%= @post.last_editor_id %>
+</p>
+
+<p>
+  <strong>Hidden:</strong>
+  <%= @post.hidden %>
+</p>
+
+<p>
+  <strong>Hidden reason:</strong>
+  <%= @post.hidden_reason_id %>
+</p>
+
+<p>
+  <strong>Notify moderators count:</strong>
+  <%= @post.notify_moderators_count %>
+</p>
+
+<p>
+  <strong>Spam count:</strong>
+  <%= @post.spam_count %>
+</p>
+
+<p>
+  <strong>Illegal count:</strong>
+  <%= @post.illegal_count %>
+</p>
+
+<p>
+  <strong>Inappropriate count:</strong>
+  <%= @post.inappropriate_count %>
+</p>
+
+<p>
+  <strong>Last version at:</strong>
+  <%= @post.last_version_at %>
+</p>
+
+<p>
+  <strong>User deleted:</strong>
+  <%= @post.user_deleted %>
+</p>
+
+<p>
+  <strong>Reply to user:</strong>
+  <%= @post.reply_to_user_id %>
+</p>
+
+<p>
+  <strong>Percent rank:</strong>
+  <%= @post.percent_rank %>
+</p>
+
+<p>
+  <strong>Notify user count:</strong>
+  <%= @post.notify_user_count %>
+</p>
+
+<p>
+  <strong>Like score:</strong>
+  <%= @post.like_score %>
+</p>
+
+<p>
+  <strong>Deleted by:</strong>
+  <%= @post.deleted_by_id %>
+</p>
+
+<p>
+  <strong>Edit reason:</strong>
+  <%= @post.edit_reason %>
+</p>
+
+<p>
+  <strong>Word count:</strong>
+  <%= @post.word_count %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @post.version %>
+</p>
+
+<p>
+  <strong>Cook method:</strong>
+  <%= @post.cook_method %>
+</p>
+
+<p>
+  <strong>Wiki:</strong>
+  <%= @post.wiki %>
+</p>
+
+<p>
+  <strong>Baked at:</strong>
+  <%= @post.baked_at %>
+</p>
+
+<p>
+  <strong>Baked version:</strong>
+  <%= @post.baked_version %>
+</p>
+
+<p>
+  <strong>Hidden at:</strong>
+  <%= @post.hidden_at %>
+</p>
+
+<p>
+  <strong>Self edits:</strong>
+  <%= @post.self_edits %>
+</p>
+
+<p>
+  <strong>Reply quoted:</strong>
+  <%= @post.reply_quoted %>
+</p>
+
+<p>
+  <strong>Via email:</strong>
+  <%= @post.via_email %>
+</p>
+
+<p>
+  <strong>Raw email:</strong>
+  <%= @post.raw_email %>
+</p>
+
+<p>
+  <strong>Public version:</strong>
+  <%= @post.public_version %>
+</p>
+
+<p>
+  <strong>Action code:</strong>
+  <%= @post.action_code %>
+</p>
+
+<p>
+  <strong>Locked by:</strong>
+  <%= @post.locked_by_id %>
+</p>
+
+<p>
+  <strong>Vbpostid:</strong>
+  <%= @post.vbpostid %>
+</p>
+
+<p>
+  <strong>Image upload:</strong>
+  <%= @post.image_upload_id %>
+</p>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

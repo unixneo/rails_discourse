@@ -1,0 +1,257 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :topic_id %>
+    <%= form.text_field :topic_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_number %>
+    <%= form.number_field :post_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raw %>
+    <%= form.text_area :raw %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cooked %>
+    <%= form.text_area :cooked %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reply_to_post_number %>
+    <%= form.number_field :reply_to_post_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reply_count %>
+    <%= form.number_field :reply_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quote_count %>
+    <%= form.number_field :quote_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deleted_at %>
+    <%= form.datetime_select :deleted_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :off_topic_count %>
+    <%= form.number_field :off_topic_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :like_count %>
+    <%= form.number_field :like_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :incoming_link_count %>
+    <%= form.number_field :incoming_link_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bookmark_count %>
+    <%= form.number_field :bookmark_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :score %>
+    <%= form.text_field :score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reads %>
+    <%= form.number_field :reads %>
+  </div>
+
+  <div class="field">
+    <%= form.label :post_type %>
+    <%= form.number_field :post_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sort_order %>
+    <%= form.number_field :sort_order %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_editor_id %>
+    <%= form.text_field :last_editor_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hidden %>
+    <%= form.check_box :hidden %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hidden_reason_id %>
+    <%= form.text_field :hidden_reason_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notify_moderators_count %>
+    <%= form.number_field :notify_moderators_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spam_count %>
+    <%= form.number_field :spam_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :illegal_count %>
+    <%= form.number_field :illegal_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inappropriate_count %>
+    <%= form.number_field :inappropriate_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_version_at %>
+    <%= form.datetime_select :last_version_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_deleted %>
+    <%= form.check_box :user_deleted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reply_to_user_id %>
+    <%= form.text_field :reply_to_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :percent_rank %>
+    <%= form.text_field :percent_rank %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notify_user_count %>
+    <%= form.number_field :notify_user_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :like_score %>
+    <%= form.number_field :like_score %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deleted_by_id %>
+    <%= form.text_field :deleted_by_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :edit_reason %>
+    <%= form.text_field :edit_reason %>
+  </div>
+
+  <div class="field">
+    <%= form.label :word_count %>
+    <%= form.number_field :word_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :version %>
+    <%= form.number_field :version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cook_method %>
+    <%= form.number_field :cook_method %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wiki %>
+    <%= form.check_box :wiki %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baked_at %>
+    <%= form.datetime_select :baked_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :baked_version %>
+    <%= form.number_field :baked_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hidden_at %>
+    <%= form.datetime_select :hidden_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :self_edits %>
+    <%= form.number_field :self_edits %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reply_quoted %>
+    <%= form.check_box :reply_quoted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :via_email %>
+    <%= form.check_box :via_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :raw_email %>
+    <%= form.text_area :raw_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :public_version %>
+    <%= form.number_field :public_version %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_code %>
+    <%= form.text_field :action_code %>
+  </div>
+
+  <div class="field">
+    <%= form.label :locked_by_id %>
+    <%= form.text_field :locked_by_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vbpostid %>
+    <%= form.number_field :vbpostid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_upload_id %>
+    <%= form.text_field :image_upload_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

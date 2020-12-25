@@ -1,0 +1,101 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  topic: one
+  post_number: 1
+  raw: MyText
+  cooked: MyText
+  reply_to_post_number: 1
+  reply_count: 1
+  quote_count: 1
+  deleted_at: 2020-12-25 18:52:44
+  off_topic_count: 1
+  like_count: 1
+  incoming_link_count: 1
+  bookmark_count: 1
+  score: 1.5
+  reads: 1
+  post_type: 1
+  sort_order: 1
+  last_editor: one
+  hidden: false
+  hidden_reason: one
+  notify_moderators_count: 1
+  spam_count: 1
+  illegal_count: 1
+  inappropriate_count: 1
+  last_version_at: 2020-12-25 18:52:44
+  user_deleted: false
+  reply_to_user: one
+  percent_rank: 1.5
+  notify_user_count: 1
+  like_score: 1
+  deleted_by: one
+  edit_reason: MyString
+  word_count: 1
+  version: 1
+  cook_method: 1
+  wiki: false
+  baked_at: 2020-12-25 18:52:44
+  baked_version: 1
+  hidden_at: 2020-12-25 18:52:44
+  self_edits: 1
+  reply_quoted: false
+  via_email: false
+  raw_email: MyText
+  public_version: 1
+  action_code: MyString
+  locked_by: one
+  vbpostid: 1
+  image_upload: one
+
+two:
+  user: two
+  topic: two
+  post_number: 1
+  raw: MyText
+  cooked: MyText
+  reply_to_post_number: 1
+  reply_count: 1
+  quote_count: 1
+  deleted_at: 2020-12-25 18:52:44
+  off_topic_count: 1
+  like_count: 1
+  incoming_link_count: 1
+  bookmark_count: 1
+  score: 1.5
+  reads: 1
+  post_type: 1
+  sort_order: 1
+  last_editor: two
+  hidden: false
+  hidden_reason: two
+  notify_moderators_count: 1
+  spam_count: 1
+  illegal_count: 1
+  inappropriate_count: 1
+  last_version_at: 2020-12-25 18:52:44
+  user_deleted: false
+  reply_to_user: two
+  percent_rank: 1.5
+  notify_user_count: 1
+  like_score: 1
+  deleted_by: two
+  edit_reason: MyString
+  word_count: 1
+  version: 1
+  cook_method: 1
+  wiki: false
+  baked_at: 2020-12-25 18:52:44
+  baked_version: 1
+  hidden_at: 2020-12-25 18:52:44
+  self_edits: 1
+  reply_quoted: false
+  via_email: false
+  raw_email: MyText
+  public_version: 1
+  action_code: MyString
+  locked_by: two
+  vbpostid: 1
+  image_upload: two

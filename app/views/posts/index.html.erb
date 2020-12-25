@@ -1,0 +1,121 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Topic</th>
+      <th>Post number</th>
+      <th>Raw</th>
+      <th>Cooked</th>
+      <th>Reply to post number</th>
+      <th>Reply count</th>
+      <th>Quote count</th>
+      <th>Deleted at</th>
+      <th>Off topic count</th>
+      <th>Like count</th>
+      <th>Incoming link count</th>
+      <th>Bookmark count</th>
+      <th>Score</th>
+      <th>Reads</th>
+      <th>Post type</th>
+      <th>Sort order</th>
+      <th>Last editor</th>
+      <th>Hidden</th>
+      <th>Hidden reason</th>
+      <th>Notify moderators count</th>
+      <th>Spam count</th>
+      <th>Illegal count</th>
+      <th>Inappropriate count</th>
+      <th>Last version at</th>
+      <th>User deleted</th>
+      <th>Reply to user</th>
+      <th>Percent rank</th>
+      <th>Notify user count</th>
+      <th>Like score</th>
+      <th>Deleted by</th>
+      <th>Edit reason</th>
+      <th>Word count</th>
+      <th>Version</th>
+      <th>Cook method</th>
+      <th>Wiki</th>
+      <th>Baked at</th>
+      <th>Baked version</th>
+      <th>Hidden at</th>
+      <th>Self edits</th>
+      <th>Reply quoted</th>
+      <th>Via email</th>
+      <th>Raw email</th>
+      <th>Public version</th>
+      <th>Action code</th>
+      <th>Locked by</th>
+      <th>Vbpostid</th>
+      <th>Image upload</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.user_id %></td>
+        <td><%= post.topic_id %></td>
+        <td><%= post.post_number %></td>
+        <td><%= post.raw %></td>
+        <td><%= post.cooked %></td>
+        <td><%= post.reply_to_post_number %></td>
+        <td><%= post.reply_count %></td>
+        <td><%= post.quote_count %></td>
+        <td><%= post.deleted_at %></td>
+        <td><%= post.off_topic_count %></td>
+        <td><%= post.like_count %></td>
+        <td><%= post.incoming_link_count %></td>
+        <td><%= post.bookmark_count %></td>
+        <td><%= post.score %></td>
+        <td><%= post.reads %></td>
+        <td><%= post.post_type %></td>
+        <td><%= post.sort_order %></td>
+        <td><%= post.last_editor_id %></td>
+        <td><%= post.hidden %></td>
+        <td><%= post.hidden_reason_id %></td>
+        <td><%= post.notify_moderators_count %></td>
+        <td><%= post.spam_count %></td>
+        <td><%= post.illegal_count %></td>
+        <td><%= post.inappropriate_count %></td>
+        <td><%= post.last_version_at %></td>
+        <td><%= post.user_deleted %></td>
+        <td><%= post.reply_to_user_id %></td>
+        <td><%= post.percent_rank %></td>
+        <td><%= post.notify_user_count %></td>
+        <td><%= post.like_score %></td>
+        <td><%= post.deleted_by_id %></td>
+        <td><%= post.edit_reason %></td>
+        <td><%= post.word_count %></td>
+        <td><%= post.version %></td>
+        <td><%= post.cook_method %></td>
+        <td><%= post.wiki %></td>
+        <td><%= post.baked_at %></td>
+        <td><%= post.baked_version %></td>
+        <td><%= post.hidden_at %></td>
+        <td><%= post.self_edits %></td>
+        <td><%= post.reply_quoted %></td>
+        <td><%= post.via_email %></td>
+        <td><%= post.raw_email %></td>
+        <td><%= post.public_version %></td>
+        <td><%= post.action_code %></td>
+        <td><%= post.locked_by_id %></td>
+        <td><%= post.vbpostid %></td>
+        <td><%= post.image_upload_id %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>

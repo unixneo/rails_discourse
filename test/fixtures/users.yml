@@ -1,0 +1,73 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  name: MyString
+  seen_notification: one
+  last_posted_at: 2020-12-25 18:34:57
+  password_hash: MyString
+  salt: MyString
+  active: false
+  username_lower: MyString
+  last_seen_at: 2020-12-25 18:34:57
+  admin: false
+  last_emailed_at: 2020-12-25 18:34:57
+  trust_level: 1
+  approved: false
+  approved_by: one
+  approved_at: 2020-12-25 18:34:57
+  previous_visit_at: 2020-12-25 18:34:57
+  suspended_at: 2020-12-25 18:34:57
+  suspended_till: 2020-12-25 18:34:57
+  date_of_birth: 2020-12-25
+  views: 1
+  flag_level: 1
+  ip_address: 
+  moderator: false
+  title: MyString
+  uploaded_avatar: one
+  locale: MyString
+  primary_group: one
+  registration_ip_address: 
+  staged: false
+  first_seen_at: 2020-12-25 18:34:57
+  silenced_till: 2020-12-25 18:34:57
+  group_locked_trust_level: 1
+  manual_locked_trust_level: 1
+  secure_identifier: MyString
+
+two:
+  username: MyString
+  name: MyString
+  seen_notification: two
+  last_posted_at: 2020-12-25 18:34:57
+  password_hash: MyString
+  salt: MyString
+  active: false
+  username_lower: MyString
+  last_seen_at: 2020-12-25 18:34:57
+  admin: false
+  last_emailed_at: 2020-12-25 18:34:57
+  trust_level: 1
+  approved: false
+  approved_by: two
+  approved_at: 2020-12-25 18:34:57
+  previous_visit_at: 2020-12-25 18:34:57
+  suspended_at: 2020-12-25 18:34:57
+  suspended_till: 2020-12-25 18:34:57
+  date_of_birth: 2020-12-25
+  views: 1
+  flag_level: 1
+  ip_address: 
+  moderator: false
+  title: MyString
+  uploaded_avatar: two
+  locale: MyString
+  primary_group: two
+  registration_ip_address: 
+  staged: false
+  first_seen_at: 2020-12-25 18:34:57
+  silenced_till: 2020-12-25 18:34:57
+  group_locked_trust_level: 1
+  manual_locked_trust_level: 1
+  secure_identifier: MyString

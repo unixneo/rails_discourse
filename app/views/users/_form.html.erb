@@ -1,0 +1,187 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :seen_notification_id %>
+    <%= form.text_field :seen_notification_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_posted_at %>
+    <%= form.datetime_select :last_posted_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_hash %>
+    <%= form.text_field :password_hash %>
+  </div>
+
+  <div class="field">
+    <%= form.label :salt %>
+    <%= form.text_field :salt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :active %>
+    <%= form.check_box :active %>
+  </div>
+
+  <div class="field">
+    <%= form.label :username_lower %>
+    <%= form.text_field :username_lower %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_seen_at %>
+    <%= form.datetime_select :last_seen_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :admin %>
+    <%= form.check_box :admin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_emailed_at %>
+    <%= form.datetime_select :last_emailed_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trust_level %>
+    <%= form.number_field :trust_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :approved %>
+    <%= form.check_box :approved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :approved_by_id %>
+    <%= form.text_field :approved_by_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :approved_at %>
+    <%= form.datetime_select :approved_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :previous_visit_at %>
+    <%= form.datetime_select :previous_visit_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suspended_at %>
+    <%= form.datetime_select :suspended_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :suspended_till %>
+    <%= form.datetime_select :suspended_till %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_of_birth %>
+    <%= form.date_select :date_of_birth %>
+  </div>
+
+  <div class="field">
+    <%= form.label :views %>
+    <%= form.number_field :views %>
+  </div>
+
+  <div class="field">
+    <%= form.label :flag_level %>
+    <%= form.number_field :flag_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ip_address %>
+    <%= form.text_field :ip_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :moderator %>
+    <%= form.check_box :moderator %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :uploaded_avatar_id %>
+    <%= form.text_field :uploaded_avatar_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :locale %>
+    <%= form.text_field :locale %>
+  </div>
+
+  <div class="field">
+    <%= form.label :primary_group_id %>
+    <%= form.text_field :primary_group_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registration_ip_address %>
+    <%= form.text_field :registration_ip_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :staged %>
+    <%= form.check_box :staged %>
+  </div>
+
+  <div class="field">
+    <%= form.label :first_seen_at %>
+    <%= form.datetime_select :first_seen_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :silenced_till %>
+    <%= form.datetime_select :silenced_till %>
+  </div>
+
+  <div class="field">
+    <%= form.label :group_locked_trust_level %>
+    <%= form.number_field :group_locked_trust_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manual_locked_trust_level %>
+    <%= form.number_field :manual_locked_trust_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :secure_identifier %>
+    <%= form.text_field :secure_identifier %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
